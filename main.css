@@ -5,5 +5,17 @@
 }
 
 .carousel-inner > .carousel-item > img {
-    height: 95vh; 
+    height: 100vh; 
+}
+
+.servicos{
+    margin: 0 auto;
+}
+
+.card{
+    width: 20vw;
+}
+
+.row {
+    padding: 25px;
 }

@@ -6,45 +6,9 @@
     <title>Hot Wheels</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="imagex/png" href="./images/logo.ico">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png" alt="Logo" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Serviços</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Motor</a></li>
-                                <li><a class="dropdown-item" href="#">Amortecimento</a></li>
-                                <li><a class="dropdown-item" href="#">Pneus</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carros</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-        </nav>
-    </div>
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,11 +35,75 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <section>
-        <div class="container">
-            <hr>
-        </div>
-    </section>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/logo.png" alt="Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#serviços" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Motor</a></li>
+                                <li><a class="dropdown-item" href="#">Amortecimento</a></li>
+                                <li><a class="dropdown-item" href="#">Pneus</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carros</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <section class="serviços" id="serviços">
+            <div class="card-group justify-content-center">
+                <div class="row" style="margin-top: 10vh;">
+                    <div class="col-md-4 text-center">
+                        <div class="card text-bg-secondary mb-3">
+                            <img src="./images/serviços-1.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Motor</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="./images/serviços-2.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Amortecimento</h5>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 text-center">
+                        <div class="card text-bg-dark mb-3">
+                            <img src="./images/serviços-3.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <h5 class="card-title">Pneus</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr>
+    </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
