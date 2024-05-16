@@ -12,10 +12,16 @@
     margin: 0 auto;
 }
 
-.card{
+.servicos > .card{
     width: 20vw;
 }
 
 .row {
     padding: 25px;
+}
+
+.modelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
