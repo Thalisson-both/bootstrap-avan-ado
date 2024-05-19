@@ -16,6 +16,11 @@
     width: 20vw;
 }
 
+.card-servicos {
+    font-weight: bolder;
+    color: #f2f3f3;
+}
+
 .row {
     padding: 25px;
 }
@@ -29,6 +34,11 @@
 
 .card-img-overlay > p {
     margin-top: 15vi;
+    font-family: serif;
+}
+
+.card-img-overlay > h5 {
+    font-weight: bold;
 }
 
 .titulo > h3 {
